@@ -1,0 +1,39 @@
+.composer-card {
+  display: flex;
+  max-width: 660px;
+  margin: 10px auto;
+  transition: max-height 0.2s;
+  max-height: 70px;
+  position: relative;
+  left: -20px;
+
+  &.open {
+    max-height: 300px;
+  }
+
+  .left-meta {
+    flex: 0 0 74px;
+    img {
+      width: 60px;
+      margin: 2px;
+      border-radius: 3px;
+    }
+  }
+  .composer {
+    flex: 1;
+
+    &.placeholder {
+      cursor: text;
+      font-family: @content-font;
+      padding: 10px;
+      color: #aaa;
+      background: #fff;
+      font-weight: 300;
+      border: 1px solid #ccc;
+    }
+
+    .composer-content {
+      margin-top: 0;
+    }
+  }
+}

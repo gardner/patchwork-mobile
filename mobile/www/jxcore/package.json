@@ -1,0 +1,153 @@
+{
+  "_args": [
+    [
+      "ssb-patchwork@^2.2.0",
+      "/Users/gardner/src/patchwork-mobile"
+    ]
+  ],
+  "_from": "ssb-patchwork@>=2.2.0 <3.0.0",
+  "_id": "ssb-patchwork@2.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ssb-patchwork",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "email": "pfrazee@gmail.com",
+    "name": "pfraze"
+  },
+  "_npmVersion": "3.5.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "ssb-patchwork",
+    "raw": "ssb-patchwork@^2.2.0",
+    "rawSpec": "^2.2.0",
+    "scope": null,
+    "spec": ">=2.2.0 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ssb-patchwork/-/ssb-patchwork-2.2.0.tgz",
+  "_shasum": "61c1457c0ef4eb9e6ea9f0a84a3246cd297fc681",
+  "_shrinkwrap": null,
+  "_spec": "ssb-patchwork@^2.2.0",
+  "_where": "/Users/gardner/src/patchwork-mobile",
+  "author": {
+    "email": "pfrazee@gmail.com",
+    "name": "Paul Frazee"
+  },
+  "bin": {
+    "patchwork": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ssbc/patchwork/issues"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "blob-to-buffer": "^1.2.3",
+    "classnames": "^2.2.1",
+    "emoji-named-characters": "^1.0.1",
+    "history": "1.13.1",
+    "hyperscript": "~1.4.6",
+    "image-loaded": "0.0.2",
+    "ip": "^1.0.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "mime-types": "^2.1.3",
+    "moment": "^2.10.6",
+    "multiblob": "^1.8.0",
+    "multicb": "^1.1.0",
+    "muxrpc": "^6.1.1",
+    "ngraph.graph": "0.0.12",
+    "ngraph.svg": "0.0.15",
+    "nicedate": "~0.0.0",
+    "observable": "^2.1.3",
+    "once": "~1.3.1",
+    "patchwork-threads": "^1.1.3",
+    "pause-offscreen": "^1.0.0",
+    "phoenix-router": "~1.0.0",
+    "published-working-tree": "~0.0.0",
+    "pull-cat": "^1.1.7",
+    "pull-identify-filetype": "^1.0.0",
+    "pull-level": "~1.2.0",
+    "pull-merge": "~1.0.2",
+    "pull-notify": "0.0.0",
+    "pull-paramap": "^1.1.3",
+    "pull-pushable": "^1.1.4",
+    "pull-serializer": "^0.3.2",
+    "pull-stream": "^2.27.0",
+    "pull-stream-to-stream": "~1.3.0",
+    "pull-ws-server": "^1.3.4",
+    "react": "^0.14.3",
+    "react-addons-css-transition-group": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-infinite": "^0.5.10",
+    "react-modal": "^0.6.0",
+    "react-router": "1.0.2",
+    "scuttlebot": "~7.5.0",
+    "ssb-config": "^1.0.3",
+    "ssb-keys": "^4.0.3",
+    "ssb-markdown": "^1.1.0",
+    "ssb-msg-schemas": "~6.1.0",
+    "ssb-msgs": "~5.2.0",
+    "ssb-ref": "~2.3.0",
+    "stack": "^0.1.0",
+    "stream-to-pull-stream": "^1.6.1",
+    "suggest-box": "~1.1.6",
+    "text-node-searcher": "~1.1.0",
+    "xtend": "^4.0.0"
+  },
+  "description": "safe secure sharing",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "browserify-incremental": "^3.0.1",
+    "envify": "^3.4.0",
+    "less": "^2.5.3",
+    "osenv": "~0.1.0",
+    "rimraf": "~2.2.8",
+    "tape": "~3.0.0",
+    "uglify-js": "^2.6.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "61c1457c0ef4eb9e6ea9f0a84a3246cd297fc681",
+    "tarball": "http://registry.npmjs.org/ssb-patchwork/-/ssb-patchwork-2.2.0.tgz"
+  },
+  "gitHead": "eddeb0befe8e1b8b2bb4cd8038f11b7c9471d7b1",
+  "homepage": "https://github.com/ssbc/patchwork#readme",
+  "license": "?",
+  "main": "app/index.js",
+  "maintainers": [
+    {
+      "name": "dominictarr",
+      "email": "dominic.tarr@gmail.com"
+    },
+    {
+      "name": "pfraze",
+      "email": "pfrazee@gmail.com"
+    }
+  ],
+  "name": "ssb-patchwork",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssbc/patchwork.git"
+  },
+  "scripts": {
+    "build": "npm run build:js && npm run build:css",
+    "build-release": "npm run build-release:js && npm run build-release:css",
+    "build-release:css": "mkdir -p ./ui/css && lessc ./ui/less/main.less --autoprefix ./ui/css/main.css",
+    "build-release:js": "NODE_ENV=production node ./scripts/build.js ./ui/main.js ./ui/main.build.js && ./node_modules/uglify-js/bin/uglifyjs ui/main.build.js > ui/main.build.min.js; mv ui/main.build.min.js ui/main.build.js",
+    "build:css": "mkdir -p ./ui/css && lessc ./ui/less/main.less ./ui/css/main.css",
+    "build:js": "NODE_ENV=development node ./scripts/build.js ./ui/main.js ./ui/main.build.js",
+    "prepublish": "npm run build-release",
+    "start": "node ./index.js",
+    "test": "set -e; for t in api/test/*.js; do node $t; done"
+  },
+  "version": "2.2.0"
+}

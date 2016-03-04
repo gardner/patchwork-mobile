@@ -1,0 +1,66 @@
+.msg-view.oneline {
+  display: flex;
+  flex-wrap: wrap;
+  height: 32px;
+  padding: 8px 6px 6px;
+  overflow: hidden;
+  color: #555;
+  border-top: 1px solid #ddd;
+
+  .type {
+    padding: 3px 0 0 0;
+    font-size: 21px;
+    text-align: right;
+  }
+  .authors {
+    flex: 0 0 35px;
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+    a {
+      color: #555;
+    }
+    .user-pic img {
+      width: 32px;
+      height: 32px;
+      border-radius: 2px;
+      margin-right: 2px;
+    }
+  }
+  .replies {
+    flex: 0 0 30px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .content {
+    flex: 1;
+    overflow: hidden;
+    color: @dark-gray3;
+    font-family: Helvetica;
+    font-weight: 300;
+    line-height: 2.2;
+    padding-left: 3px;
+  }
+  .date {
+    text-align: right;
+    padding: 5px 0 0;
+  }
+
+  &.unread {
+    border-left: 4px solid #006EFF;
+    background: #fff;
+    .replies {
+      font-weight: bold;
+    }
+    .content {
+      font-weight: bold;
+    }
+  }
+  
+  &:hover {
+    background: #fafafa;
+  }
+}
+.divider-spot .msg-view.oneline {
+  border-top: 0;
+}

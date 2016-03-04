@@ -1,0 +1,34 @@
+# Mac
+.DS_Store
+
+io.jxcore.node.jx
+node_modules
+# iOS
+mobile/platforms/ios/build/
+mobile/platforms/ios/www/
+mobile/platforms/ios/cordova/console.log
+*.xcuserdatad
+
+# android
+mobile/platforms/android/assets/www
+mobile/platforms/android/bin
+mobile/platforms/android/gen
+mobile/platforms/android/local.properties
+mobile/platforms/android/ant-build
+mobile/platforms/android/ant-gen
+mobile/platforms/android/CordovaLib/ant-build
+mobile/platforms/android/CordovaLib/ant-gen
+mobile/platforms/android/CordovaLib/bin
+mobile/platforms/android/CordovaLib/gen
+mobile/platforms/android/CordovaLib/local.properties
+
+# wp8
+mobile/platforms/wp8/bin
+mobile/platforms/wp8/obj
+mobile/platforms/wp8/www
+mobile/platforms/wp8/.staging
+mobile/platforms/wp8/*.suo
+mobile/platforms/wp8/*.csproj.user
+
+# res
+resources/signing

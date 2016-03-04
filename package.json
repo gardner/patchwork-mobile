@@ -1,0 +1,19 @@
+{
+  "name": "ssb-patchwork-mobile",
+  "version": "0.0.1",
+  "description": "safe secure sharing, for mobile",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gardner/patchwork-mobile.git"
+  },
+  "scripts": {
+    "build": "./build.sh npm"
+  },
+  "author": "Gardner Bickford <gbickford@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "cordova": "^6.0.0",
+    "jxc": "^1.0.13",
+    "ssb-patchwork": "^2.2.0"
+  }
+}

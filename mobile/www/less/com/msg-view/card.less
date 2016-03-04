@@ -1,0 +1,233 @@
+.msg-view.card-post {
+  display: flex;
+  max-width: 660px;
+  margin: 10px auto;
+
+  .left-meta {
+    flex: 0 0 74px;
+    padding: 2px 0 0;
+    img {
+      width: 60px;
+      margin: 2px;
+      border-radius: 3px;
+    }
+    div {
+      text-align: right;
+      padding-right: 12px;
+      font-weight: 300;
+      font-size: 14px;
+      a {
+        color: #555;
+      }
+    }
+  }
+  .content {
+    border: 1px solid #ccc;
+    flex: 1;
+    background-color: #fff;
+  }
+
+  .header {
+    display: flex;
+    margin: 10px;
+
+    color: @gray1;
+    .header-left {
+      flex: 1;
+      font-size: 21px;
+      font-weight: 300;
+    }
+    .header-right {
+      white-space: pre;
+      padding-right: 5px;
+      a.save {
+        padding-right: 10px;
+      }
+    }
+    a {
+      color: @dark-gray2;
+    }
+    .channel {
+      color: gray;
+      font-weight: 300;
+      font-size: 16px;
+      a {
+        color: #8694a7;
+      }
+    }
+  }
+  .body {
+    margin: 10px 10px 0;
+    overflow: hidden;
+    color: @dark-gray3;
+    font-weight: 300;
+    font-family: @content-font;
+    line-height: 1.4;
+    min-height: 30px;
+    max-height: 500px;
+    word-break: break-word;
+  }
+  .ctrls {
+    display: flex;
+    padding: 5px 0;
+    color: #808080;
+    font-weight: 300;
+    font-size: 15px;
+    white-space: pre;
+    & > div {
+      padding: 0 10px;
+    }
+    .upvoters, .downvoters {
+      font-size: 80%;
+      padding-top: 2px;
+      white-space: normal;
+    }
+    a {
+      color: #555;
+    }
+    a.vote {
+      &:hover {
+        text-decoration: none;
+        i {
+          .anim-rainbow-color(0.1s);
+          transition: transform 0.2s cubic-bezier(0, 0, 0.75, 2.65);
+        }
+        span:nth-child(2) { .anim-rainbow-color(0.15s); }
+        span:nth-child(3) { .anim-rainbow-color(0.2s); }
+        span:nth-child(4) { .anim-rainbow-color(0.25s); }
+        span:nth-child(5) { .anim-rainbow-color(0.3s); }
+        span:nth-child(6) { .anim-rainbow-color(0.35s); }
+        span:nth-child(7) { .anim-rainbow-color(0.4s); }
+        span:nth-child(8) { .anim-rainbow-color(0.45s); }
+      }
+      &.selected {
+        font-weight: normal;
+        i {
+          transform: scale(1.2);
+        }
+      }
+    }
+    a.flag {
+      &.selected, &:hover {
+        color: #BB1111;
+      }
+    }
+  }
+
+  .read-more {
+    display: none;
+  }
+  &.oversized {
+    .body {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+    }
+    .read-more {
+      display: block;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-top: 5px;
+      color: blue;
+      cursor: pointer;
+      border-top: 1px solid #ccc;
+      &:before {
+        // put some white space above the border
+        content: '';
+        width: 100%;
+        display: block;
+        background: #fff;
+        left: 0;
+        position: absolute;
+        top: -11px;
+        height: 10px;
+      }
+    }
+  }
+
+  &.expanded {
+    .body {
+      height: auto;
+      max-height: none;
+    }
+    .read-more {
+      display: none;
+    }
+  }
+}
+
+.msg-view.card-missing-post {
+  max-width: 660px;
+  margin: 20px auto;
+
+  div {
+    .elevation-card;
+    margin-left: 77px;
+    background: #fafafa;
+    padding: 20px;
+    font-weight: 300;
+    color: #666;
+  }
+  &.expanded div {
+    background: #fff;
+  }
+}
+
+.msg-view.card-mention {
+  max-width: 660px;
+  margin: 20px auto;
+
+  &>div {
+    .elevation-card;
+    display: flex;
+    margin-left: 77px;
+    padding: 10px 15px;
+    font-weight: 300;
+    color: #666;
+    background: #FFF;
+    border: 1px solid #D5D5D5;
+
+    i {
+      margin: 4px 5px 0 0;
+    }
+    .user-link {
+      color: #555;
+      font-weight: normal;
+    }
+  }
+}
+
+.msg-view.card-muted {
+  display: flex;
+  max-width: 660px;
+  margin: 20px auto;
+
+  .ctrls {
+    flex: 0 0 75px;
+    padding: 2px 5px 0 3px;
+    text-align: right;
+    img {
+      width: 30px;
+      border-radius: 3px;
+    }
+  }
+  .content {
+    flex: 1;
+    padding: 7px;
+    overflow: hidden;
+    a {
+      color: gray;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    div:last-child {
+      font-weight: 300;
+      font-size: 12px;    
+    }
+  }
+}
